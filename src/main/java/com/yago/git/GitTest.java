@@ -1,17 +1,15 @@
 package com.yago.git;
 
+import com.yago.git.utils.EnumUtil;
+
 public class GitTest {
 
-    public static void main(String[] args) {
-        System.out.println("hello git !!!");
-        System.out.println("hello git2!!!");
-        System.out.println("hello hot-fix");
-        System.out.println("hello master");
-        System.out.println("hello hot-fix2");
-        System.out.println("push test");
-        System.out.println("pull test");
-        System.out.println("gitee push test");
-        System.out.println("gitee pull test");
-    }
-
+  public static void main(String[] args) throws Exception {
+    String state = "9";
+    String s = EnumUtil.registrationTpyeInvoke(state);
+    String state2 = "0" + state;
+    String s1 = EnumUtil.appointmentPeriodEnumInvoke(state2);
+    System.out.println(s);
+    System.out.println(s1);
+  }
 }
